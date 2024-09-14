@@ -1,0 +1,198 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    background-color: #004225; /* British Racing Green */
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero .cta {
+    background-color: #e8d245;
+    color: #004225;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.hero .cta:hover {
+    transform: scale(1.05);
+}
+
+.value-prop, .features, .how-it-works, .cta-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.value-prop h2, .features h2, .how-it-works h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.value-prop ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.value-prop ul li {
+    flex: 1 1 200px;
+    margin: 20px;
+    font-size: 1.1em;
+    transition: transform 0.3s ease;
+}
+
+.value-prop ul li i {
+    font-size: 2em;
+    color: #004225;
+    margin-bottom: 10px;
+}
+
+.value-prop ul li:hover {
+    transform: scale(1.05);
+}
+
+.features .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.features .feature-item {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease;
+}
+
+.features .feature-item i {
+    font-size: 2.5em;
+    color: #004225;
+    margin-bottom: 20px;
+}
+
+.features .feature-item:hover {
+    transform: scale(1.05);
+}
+
+.how-it-works .steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.how-it-works .step {
+    flex: 1 1 200px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+.how-it-works .step i {
+    font-size: 2.5em;
+    color: #004225;
+    margin-bottom: 15px;
+}
+
+.how-it-works .step:hover {
+    transform: scale(1.05);
+}
+
+.cta-section {
+    background-color: #004225;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-section .cta {
+    background-color: #e8d245;
+    color: #004225;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.cta-section .cta:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+footer .footer-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social-media a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: transform 0.3s ease;
+}
+
+footer .social-media a:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .value-prop ul {
+        flex-direction: column;
+    }
+
+    .how-it-works .steps {
+        flex-direction: column;
+    }
+
+    .features .feature-grid {
+        grid-template-columns: 1fr;
+    }
+}
